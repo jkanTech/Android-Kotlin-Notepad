@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NoteDetailActivity">
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary" />
+
+    <EditText
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:visibility="gone"
+        android:layout_below="@id/toolbar"
+        style="@style/NoteTitleFont"
+        android:hint="Titre de la note"
+        android:autofillHints="" />
+
+    <EditText
+        android:id="@+id/text"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_marginTop="10dp"
+        android:textSize="19dp"
+        android:visibility="gone"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_below="@id/title"
+        android:background="@drawable/addnote_border"
+        android:hint="Texte de la note"
+        android:autofillHints="" />
+        <TextView
+        android:id="@+id/edit_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/toolbar"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+        style="@style/NoteTitleFont"
+        android:hint="Titre de la note"
+        android:autofillHints="" />
+
+    <TextView
+        android:id="@+id/edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textSize="19dp"
+        android:layout_marginStart="10dp"
+        android:onClick="Modifier"
+        android:layout_marginEnd="10dp"
+        android:layout_below="@id/edit_title"
+        android:hint="Texte de la note"
+        android:autofillHints="" />
+    </RelativeLayout>
+
+</ScrollView>
